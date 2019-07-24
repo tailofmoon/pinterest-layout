@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>핀터레스트스타일레이아웃.html</title>
+  <style>
+    *{
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+    }
+    body{}
+    header{
+      text-align: center;
+      padding: 30px;
+    }
+    section.photo{
+      padding: 5px;
+    }
+    section.photo img{ 
+      width: 100%;
+      vertical-align: middle;
+      padding: 5px;
+      border-radius: 15px;
+      /* box-shadow: 2px 2px 8px rgba(0,0,0,0.2); */
+    }
+    .col{
+      width: 25%;
+      float: left;
+      /* border: 1px solid red; */
+    }
+
+    /* 768px까지의 크기 */
+    @media (max-width: 768px){
+      .col{
+        width: 50%;
+        float: left;
+      }
+      /* .col:nth-child(2){
+        float: right;
+      } */
+    }
+
+    /* 768px까지의 크기 */
+    @media (max-width: 375px){
+      .col{
+        width: 100%;
+        /* float:left; */
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>핀터레스트 스타일 레이아웃</h1>
+    <p>화면의 폭에 따라 사진의 배열이 변하게 되는 반응형 갤러리 페이지</p>
+  </header>
+
+  <section class="photo">
+    <div class="col">
+      <img src="http://placeimg.com/400/300/1" alt="">
+      <img src="http://placeimg.com/400/500/2" alt="">
+      <img src="http://placeimg.com/400/600/3" alt="">
+      <img src="http://placeimg.com/400/200/4" alt="">
+      <img src="http://placeimg.com/400/400/5" alt="">
+      <img src="http://placeimg.com/400/300/6" alt="">
+    </div>
+    <div class="col">
+      <img src="http://placeimg.com/400/600/11" alt="">
+      <img src="http://placeimg.com/400/300/12" alt="">
+      <img src="http://placeimg.com/400/200/13" alt="">
+      <img src="http://placeimg.com/400/700/14" alt="">
+      <img src="http://placeimg.com/400/400/15" alt="">
+      <img src="http://placeimg.com/400/300/16" alt="">
+    </div>
+    <div class="col">
+      <img src="http://placeimg.com/400/500/21" alt="">
+      <img src="http://placeimg.com/400/300/22" alt="">
+      <img src="http://placeimg.com/400/600/23" alt="">
+      <img src="http://placeimg.com/400/200/24" alt="">
+      <img src="http://placeimg.com/400/300/25" alt="">
+      <img src="http://placeimg.com/400/400/26" alt="">
+    </div>
+    <div class="col">
+      <img src="http://placeimg.com/400/500/31" alt="">
+      <img src="http://placeimg.com/400/300/32" alt="">
+      <img src="http://placeimg.com/400/400/33" alt="">
+      <img src="http://placeimg.com/400/200/34" alt="">
+      <img src="http://placeimg.com/400/500/35" alt="">
+      <img src="http://placeimg.com/400/700/36" alt="">
+    </div>
+  </section>
+</body>
+</html>
